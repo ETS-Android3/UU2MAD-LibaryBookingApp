@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="20dp">
 
         <TextView
-            android:id="@+id/txtSettings"
+            android:id="@+id/txtHomeWel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
