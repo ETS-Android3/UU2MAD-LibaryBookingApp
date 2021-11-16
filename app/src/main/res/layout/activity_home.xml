@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Welcome Luke"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/txtIntro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"
+            android:text="As an Ulster University student, you have the right to use the libaries located on any of our campuses.
+However, as of right now, you must first book a space using this application. This is a proactive measure to ease concerns about overcrowding within our libaries."
+            />
+
+        <TextView
+            android:id="@+id/txtInfo2"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="For more information on the services provided by Ulster Univerisity’s libaries, please click Libary Info."
+            />
+
+        <Button
+            android:id="@+id/btnHomeInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#006726"
+            android:layout_marginBottom="20dp"
+            android:text="Library Info"/>
+
+        <TextView
+            android:id="@+id/txtCovid2"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Please click COVID-19 for the up to date list of COVID-19 symptoms, provided by the NHS. You are required to read this, and confirm that you do not have these symptoms before making a booking." />
+
+        <Button
+            android:id="@+id/btnHomeCovid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#006726"
+            android:text="COVID-19"/>
+
+        <CheckBox
+            android:id="@+id/chbHomeConf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="I confirm that I am not experiencing COVID-19 symptoms"/>
+
+        <Button
+            android:id="@+id/btnHomeBook2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:backgroundTint="#005C97"
+            android:text="Book Now" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

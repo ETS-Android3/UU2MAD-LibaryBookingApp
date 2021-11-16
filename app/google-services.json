@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "666091840801",
+    "project_id": "libarybookingapp",
+    "storage_bucket": "libarybookingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666091840801:android:83eb19f642d66ab37e0a60",
+        "android_client_info": {
+          "package_name": "com.example.libarybookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666091840801-pff60731oghp8jfbr42lpgn4m96a0aig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.libarybookingapp",
+            "certificate_hash": "ff25429b77100e3a7be84c930b95442660b5c1c9"
+          }
+        },
+        {
+          "client_id": "666091840801-vlchgb5k8osp1f296egclm60s7oa843t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA9YyPliHa3-sOZaQe9Ckea_WFFGY-ja4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666091840801-vlchgb5k8osp1f296egclm60s7oa843t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
