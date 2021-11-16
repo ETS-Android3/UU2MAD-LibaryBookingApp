@@ -8,9 +8,19 @@
         <entry key="..\:/I/S/U2/MA/Project/LibaryBookingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.31666666666666665" />
         <entry key="..\:/I/S/U2/MA/Project/LibaryBookingApp/app/src/main/res/layout/activity_campus_overview.xml" value="0.33" />
         <entry key="..\:/I/S/U2/MA/Project/LibaryBookingApp/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/background_splash.xml" value="0.37864583333333335" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/bg_menu.xml" value="0.30833333333333335" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/bg_menu2.xml" value="0.30833333333333335" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/bg_menu_2.xml" value="0.21927083333333333" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/blue_outline.xml" value="0.21927083333333333" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/rounded_edittext.xml" value="0.37864583333333335" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/spiner_bg.xml" value="0.21927083333333333" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_campus_overview.xml" value="0.36666666666666664" />
-        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_campus_select.xml" value="0.21219047619047618" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_campus_select.xml" value="0.25" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_pass_reset.xml" value="0.278125" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_reset_pass.xml" value="0.33" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_settings.xml" value="0.2921875" />
       </map>
     </option>
   </component>

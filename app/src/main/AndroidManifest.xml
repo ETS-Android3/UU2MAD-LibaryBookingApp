@@ -9,24 +9,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibaryBookingApp">
-        <activity
-            android:name="com.example.librarybookingapp.CampusOverviewActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.librarybookingapp.CampusSelectActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.librarybookingapp.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.librarybookingapp.MainActivity"
-            android:exported="true">
+
+        <activity android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/splashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".ResetPassActivity"
+            android:exported="true"
+            android:parentActivityName=".SettingsActivity"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".CampusOverviewActivity"
+            android:exported="true"
+            android:parentActivityName=".CampusSelectActivity"/>
+        <activity
+            android:name=".CampusSelectActivity"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

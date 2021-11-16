@@ -5,69 +5,141 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CampusSelectActivity">
-<TableLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="vertical">-->
-
-    
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="Magee campus libary"
-            android:scaleType="centerCrop"
-            android:src="@drawable/mageelibary"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mageecampus"
-            android:layout_row="1" />
-/
 
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="Magee campus libary"
-            android:scaleType="centerCrop"
-            android:src="@drawable/mageelibary"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/belfastcampus"
-            android:layout_row="2"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        android:layout_weight="0"
 
         <ImageView
-            android:id="@+id/imageView3"
+
+            android:id="@+id/imgTest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="Magee campus libary"
+
             android:scaleType="centerCrop"
-            android:src="@drawable/mageelibary"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/colerainecampus" />
+            android:src="@drawable/mageecampus" />
+
+        <LinearLayout
+            android:id="@+id/my_view1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="selectMageeClicked"
+
+            android:orientation="vertical" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_menu_2"
+            android:text="      Magee\n      Northland Rd, Derry, Co. Londonderry, BT48 7JL" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="Magee campus libary"
             android:scaleType="centerCrop"
-            android:src="@drawable/mageelibary"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/jordonstowncampus" />
+            android:src="@drawable/belfastcampus" />
 
-</TableLayout>
 
-<!--    </LinearLayout>-->
+
+            <TextView
+                android:background="@drawable/bg_menu_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_alignParentBottom="true"
+                android:text="      Belfast\n      York Street, Belfast, Co. Antrim, BT15 1ED"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/colerainecampus" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_menu_2"
+            android:text="      Coleraine\n      Cromore Road, Coleraine, Co. Londonderry, BT52 1SA" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jordonstowncampus" />
+
+
+
+            <TextView
+                android:background="@drawable/bg_menu_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="      Jordonstown\n      Shore Road, Newtownabbey, Co. Antrim, BT37 0QB" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

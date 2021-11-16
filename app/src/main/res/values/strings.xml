@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LibaryBookingApp</string>
+    <string-array name="campusArray">
+        <item>Magee</item>
+        <item>Belfast</item>
+        <item>Coleraine</item>
+        <item>Jordonstown</item>
+    </string-array>
 </resources>

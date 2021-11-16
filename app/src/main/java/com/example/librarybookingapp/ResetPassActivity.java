@@ -1,20 +1,18 @@
 package com.example.librarybookingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
+
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity
+public class ResetPassActivity extends AppCompatActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-
+        setContentView(R.layout.activity_reset_pass);
     }
+
+
 }
