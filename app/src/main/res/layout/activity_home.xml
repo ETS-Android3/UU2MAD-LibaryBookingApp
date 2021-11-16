@@ -8,90 +8,117 @@
 
     <LinearLayout
         android:id="@+id/lnlHome"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="20dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtSettings"
+            android:id="@+id/txtHomeWel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-medium"
-            android:text="Welcome Luke"
+            android:text="Welcome"
             android:textColor="#000000"
-            android:textSize="26dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtCurrentUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
             android:layout_marginBottom="20dp"
-            android:text="As an Ulster University student, you have the right to use the libaries located on any of our campuses.
-However, as of right now, you must first book a space using this application. This is a proactive measure to ease concerns about overcrowding within our libaries."
-            android:textColor="#000000" />
+            android:text="As of right now, you are required to book a library slot using this application. This is a proactive measure to ease concerns about overcrowding within our libaries."
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtHomeInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
             android:layout_marginBottom="10dp"
-            android:text="For more information on the services provided by Ulster Univerisity’s libaries, please click Libary Info."
-            android:textColor="#000000" />
+            android:text="For information on Ulster University's libraries:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnHomeInfo"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:backgroundTint="#006726"
             android:onClick="homeInfoClicked"
-            android:text="Library Info" />
+            android:text="Library Info"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/txtHomeCovid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
             android:layout_marginBottom="10dp"
-            android:text="Please click COVID-19 for the up to date list of COVID-19 symptoms, provided by the NHS. You are required to read this, and confirm that you do not have these symptoms before making a booking."
-            android:textColor="#000000" />
+            android:text="You are required to confirm that you do not have COVID-19 symptoms before continuing. For the latest COVID-19 symptoms:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnHomeCovid"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:backgroundTint="#006726"
             android:onClick="homeCovidClicked"
-            android:text="COVID-19" />
+            android:text="COVID-19 Info"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_menu_3">
 
         <CheckBox
             android:id="@+id/chbHomeConf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="I confirm that I am not experiencing COVID-19 symptoms" />
+            android:layout_gravity="center_horizontal"
+            android:text="I am not experiencing COVID-19 symptoms"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnHomeBook"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
             android:backgroundTint="#005C97"
             android:onClick="homeBookClicked"
-
-            android:text="Book Now" />
+            android:text="Book a Slot"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnHomeSettings"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#808080"
+            android:layout_gravity="center"
+            android:backgroundTint="#006726"
             android:onClick="homeSettingsClicked"
-            android:text="Settings" />
+            android:text="Settings"
+            android:textSize="18sp" />
     </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
