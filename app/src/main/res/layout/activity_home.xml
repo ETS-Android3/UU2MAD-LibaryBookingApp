@@ -28,7 +28,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtCurrentUser"
+            android:id="@+id/txtResetPassUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -38,7 +38,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/txtHomeInfo"
+            android:id="@+id/txtResetPassUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"

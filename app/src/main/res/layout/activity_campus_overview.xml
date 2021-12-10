@@ -7,14 +7,14 @@
     tools:context=".CampusOverviewActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgOverviewBg"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:contentDescription="Magee campus libary"
         android:scaleType="center"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/mageelibary" />
+         />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -28,13 +28,13 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/txtMaxPCSlots"
+            android:id="@+id/txtCampusName"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:text="Magee Campus Libary"
+            android:text="Magee Campus"
             android:textColor="#000000"
             android:textSize="28sp" />
 
@@ -65,7 +65,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/txtMaxPCSlots4"
+            android:id="@+id/txtPCSlots"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginLeft="50dp"
@@ -73,7 +73,7 @@
             android:layout_marginBottom="20dp"
             android:text="10 Remaining out of 90"
 
-            android:textColor="#006726"
+            android:textColor="#000000"
             android:textSize="20sp" />
 
 
@@ -90,24 +90,25 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/txtMaxPCSlots6"
+            android:id="@+id/txtNoPCSlots"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="50dp"
-            android:textColor="#DD5454"
-
             android:text="40 Remaining out of 90"
+
+            android:textColor="#000000"
             android:textSize="20sp" />
 
         <Button
 
-            android:id="@+id/btnBook"
+            android:id="@+id/btnOverviewBook"
             android:layout_width="180dp"
-            android:backgroundTint="#005C97"
-
             android:layout_height="wrap_content"
+
+            android:backgroundTint="#005C97"
+            android:onClick="overviewBookClicked"
             android:text="Book\nMagee Slot" />
 
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LibaryBookingApp</string>
     <string-array name="campusArray">
+        <item>Choose</item>
         <item>Magee</item>
         <item>Belfast</item>
         <item>Coleraine</item>

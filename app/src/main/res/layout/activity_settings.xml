@@ -35,27 +35,17 @@
             android:textSize="26dp" />
 
         <TextView
-            android:id="@+id/txtCurrentUser"
+            android:id="@+id/txtResetPassUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_marginBottom="10dp"
             android:text="Current User:"
             android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/txtHomeInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginBottom="10dp"
-            android:text="Username: smith-l4@ulster.ac.uk"
-            android:textColor="#000000"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/txtHomeInfo2"
+            android:id="@+id/txtSetName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -80,7 +70,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spnSetCampus"
                 style="@android:style/Widget.Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,10 +85,11 @@
 
 
         <CheckBox
-            android:id="@+id/chbHomeConf3"
+            android:id="@+id/chbSetSkip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
+            android:onClick="setSkipClick"
             android:text="Skip selection screen and always go to your default campus overview page"
             android:textSize="14sp" />
 
@@ -119,6 +110,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
+        android:clickable="false"
         android:gravity="bottom"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,13 +122,13 @@
             android:id="@+id/btnHomeBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="80dp"
-            android:layout_alignParentBottom="true"
             android:backgroundTint="#DD5454"
-            android:text="Log Out"
+            android:onClick="setLogOutClicked"
 
-            />
+            android:text="Log Out" />
     </LinearLayout>
 
 

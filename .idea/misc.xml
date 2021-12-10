@@ -16,6 +16,7 @@
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/blue_outline.xml" value="0.21927083333333333" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/rounded_edittext.xml" value="0.37864583333333335" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/drawable/spiner_bg.xml" value="0.21927083333333333" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_booking.xml" value="0.2828125" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_campus_overview.xml" value="0.33" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_campus_select.xml" value="0.33" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_home.xml" value="0.25" />
@@ -23,6 +24,8 @@
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_pass_reset.xml" value="0.278125" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_reset_pass.xml" value="0.33" />
         <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/layout/activity_settings.xml" value="0.2921875" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
+        <entry key="..\:/I/S/U2/MA/Project/LibraryBookingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26614583333333336" />
       </map>
     </option>
   </component>
