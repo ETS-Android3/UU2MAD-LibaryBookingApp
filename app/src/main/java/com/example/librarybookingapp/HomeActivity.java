@@ -26,10 +26,11 @@ import com.google.firebase.database.ValueEventListener;
 public class HomeActivity extends AppCompatActivity
 {
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://libarybookingapp-default-rtdb.europe-west1.firebasedatabase.app/");
-    final DatabaseReference refDatabase = database.getReference("User");
+    final DatabaseReference refUser = database.getReference("User");
     TextView txtHomeWel;
     CheckBox homeConf;
     boolean skipSelection = false;
+    String userID ="UID1";
 
     @Override
     public void onBackPressed()
@@ -47,7 +48,7 @@ public class HomeActivity extends AppCompatActivity
 
         String userID ="UID1";
 
-        refDatabase.child(userID).child("Forename").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
+        refUser.child(userID).child("Forename").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task)
@@ -63,7 +64,7 @@ public class HomeActivity extends AppCompatActivity
             }
         });
 
-        refDatabase.child(userID).child("Surname").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
+        refUser.child(userID).child("Surname").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task)
@@ -79,26 +80,8 @@ public class HomeActivity extends AppCompatActivity
             }
         });
 
-        refDatabase.child(userID).child("skipSelection").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
-        {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task)
-            {
-                if (!task.isSuccessful())
-                    Log.e("firebase", "Error getting data", task.getException());
-                else
-               {
-                    String value = String.valueOf(task.getResult().getValue());
 
-                    if(value=="true")
-                        skipSelection = true;
-                    else
-                        skipSelection = false;
-                }
-            }
-        });
-
-        refDatabase.child(userID).child("skipSelection").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
+        refUser.child(userID).child("SkipSelection").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task)
@@ -107,15 +90,12 @@ public class HomeActivity extends AppCompatActivity
                     Log.e("firebase", "Error getting data", task.getException());
                 else
                 {
-                    String value = String.valueOf(task.getResult().getValue());
-
-                    if(value=="true")
-                        skipSelection = true;
-                    else
-                        skipSelection = false;
+                    skipSelection = Boolean.valueOf(String.valueOf(task.getResult().getValue()));
                 }
             }
         });
+
+
 
 
 
@@ -142,13 +122,33 @@ public class HomeActivity extends AppCompatActivity
 
         if(homeConf.isChecked())
         {
-            Intent intent;
-            if(skipSelection==true)
-                intent = new Intent(this, CampusOverviewActivity.class);
-            else
-                intent = new Intent(this, CampusSelectActivity.class);
 
-            startActivity(intent);
+            if(skipSelection)
+            {
+                refUser.child(userID).child("CampusID").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
+                {
+                    @Override
+                    public void onComplete(@NonNull Task<DataSnapshot> task)
+                    {
+                        if (!task.isSuccessful())
+                            Log.e("firebase", "Error getting data", task.getException());
+                        else
+                        {
+                            String value = String.valueOf(task.getResult().getValue());
+
+                            String campusID = String.valueOf(task.getResult().getValue());
+                            Intent intent = new Intent(HomeActivity.this, CampusOverviewActivity.class);
+                            intent.putExtra("CampusID", campusID);
+                            startActivity(intent);
+                        }
+                    }
+                });
+            }
+            else
+                {
+                Intent intent = new Intent(this, CampusSelectActivity.class);
+                startActivity(intent);
+            }
         }
     }
 

@@ -44,17 +44,15 @@ public class CampusOverviewActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_campus_overview);
 
+        String campusID = getIntent().getStringExtra("CampusID");
+
         txtCampusName = findViewById(R.id.txtCampusName);
         txtPCSlots = findViewById(R.id.txtPCSlots);
         txtNoPCSlots = findViewById(R.id.txtNoPCSlots);
 
-        String userID ="UID1";
-        String campusID ="CID2";
+        // campusID ="CID2";
 
         imgOverviewBg = findViewById(R.id.imgOverviewBg);
-
-
-
 
         refCampus.child(campusID).child("CampusName").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
@@ -73,10 +71,13 @@ public class CampusOverviewActivity extends AppCompatActivity
                     {
                         case "Magee":
                             imgOverviewBg.setImageResource(R.drawable.mageelibrary);
+                            break;
                         case "Belfast":
                             imgOverviewBg.setImageResource(R.drawable.belfastlibrary);
+                            break;
                         case "Coleraine":
                             imgOverviewBg.setImageResource(R.drawable.colerainelibrary);
+                            break;
                         case "Jordonstown":
                             imgOverviewBg.setImageResource(R.drawable.jordonstownlibrary);
                     }
@@ -107,7 +108,6 @@ public class CampusOverviewActivity extends AppCompatActivity
                     Log.e("firebase", "Error getting data", task.getException());
                 else
                 {
-
                     int value = Integer.valueOf(String.valueOf(task.getResult().getValue()));
 
                     txtPCSlots.setText(String.valueOf(maxPCSlots- value) + " remaining out of " + String.valueOf(maxPCSlots));

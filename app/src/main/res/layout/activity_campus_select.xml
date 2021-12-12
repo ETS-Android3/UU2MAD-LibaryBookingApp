@@ -71,6 +71,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="selectBelfastClicked"
             android:scaleType="centerCrop"
             android:src="@drawable/belfastcampus" />
 
@@ -100,6 +101,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="selectColeraineClicked"
             android:scaleType="centerCrop"
             android:src="@drawable/colerainecampus" />
 
@@ -125,6 +127,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="selectJordonstownClicked"
             android:scaleType="centerCrop"
             android:src="@drawable/jordonstowncampus" />
 
