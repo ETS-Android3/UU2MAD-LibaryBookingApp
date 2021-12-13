@@ -1,27 +1,19 @@
 package com.example.librarybookingapp;
 
-import static android.content.ContentValues.TAG;
-import static java.lang.Boolean.parseBoolean;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class HomeActivity extends AppCompatActivity
 {
@@ -46,8 +38,6 @@ public class HomeActivity extends AppCompatActivity
 
         txtHomeWel = findViewById(R.id.txtHomeWel);
 
-        String userID ="UID1";
-
         refUser.child(userID).child("Forename").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
             @Override
@@ -58,7 +48,6 @@ public class HomeActivity extends AppCompatActivity
                 else
                {
                     String value = String.valueOf(task.getResult().getValue());
-
                     txtHomeWel.setText("Welcome " + value);
                 }
             }
@@ -74,12 +63,10 @@ public class HomeActivity extends AppCompatActivity
                 else
                {
                     String value = String.valueOf(task.getResult().getValue());
-
                     txtHomeWel.setText(txtHomeWel.getText() + " " + value);
                 }
             }
         });
-
 
         refUser.child(userID).child("SkipSelection").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
         {
@@ -89,19 +76,9 @@ public class HomeActivity extends AppCompatActivity
                 if (!task.isSuccessful())
                     Log.e("firebase", "Error getting data", task.getException());
                 else
-                {
                     skipSelection = Boolean.valueOf(String.valueOf(task.getResult().getValue()));
-                }
             }
         });
-
-
-
-
-
-
-
-
     }
 
     public void homeInfoClicked(View view)
@@ -122,7 +99,6 @@ public class HomeActivity extends AppCompatActivity
 
         if(homeConf.isChecked())
         {
-
             if(skipSelection)
             {
                 refUser.child(userID).child("CampusID").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>()
@@ -134,8 +110,6 @@ public class HomeActivity extends AppCompatActivity
                             Log.e("firebase", "Error getting data", task.getException());
                         else
                         {
-                            String value = String.valueOf(task.getResult().getValue());
-
                             String campusID = String.valueOf(task.getResult().getValue());
                             Intent intent = new Intent(HomeActivity.this, CampusOverviewActivity.class);
                             intent.putExtra("CampusID", campusID);
@@ -145,10 +119,10 @@ public class HomeActivity extends AppCompatActivity
                 });
             }
             else
-                {
+           {
                 Intent intent = new Intent(this, CampusSelectActivity.class);
                 startActivity(intent);
-            }
+           }
         }
     }
 

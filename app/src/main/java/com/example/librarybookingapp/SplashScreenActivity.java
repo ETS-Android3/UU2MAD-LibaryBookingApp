@@ -2,7 +2,6 @@ package com.example.librarybookingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity
@@ -14,9 +13,7 @@ public class SplashScreenActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         Intent intent = new Intent(this, MainActivity.class);
-
         startActivity(intent);
-
         finish();
     }
 }

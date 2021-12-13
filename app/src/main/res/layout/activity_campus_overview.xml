@@ -12,12 +12,12 @@
         android:layout_height="400dp"
         android:contentDescription="Magee campus libary"
         android:scaleType="center"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/lnlOverview"
         app:layout_constraintTop_toTopOf="parent"
          />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/lnlOverview"
         android:layout_width="0dp"
         android:layout_height="520dp"
         android:background="@drawable/bg_menu"
