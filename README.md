@@ -13,14 +13,13 @@ My personal contribution to the project:
 7. Front-End and Back-End Development of Splash Screen
 
 The following screenshots show the tables that I created within the Firebase Realtime Database:
-Campus Table:
+Campus Table
 ![image](https://user-images.githubusercontent.com/91070226/152444461-e07963ca-7bf7-49fb-bdec-e531f95a8232.png)
 
-User Table:
+User Table
 ![image](https://user-images.githubusercontent.com/91070226/152444478-fced0147-6eab-42fe-808f-1230e22a7522.png)
 
-Screenshots of each of the pages that I developed are shown below.
-
+Screenshots of each of the pages that I developed are shown below:
 Home Page
 ![image](https://user-images.githubusercontent.com/91070226/152442646-d0bbb6cf-4d02-48b4-8dcd-6b41fee2ae58.png)
 
