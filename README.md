@@ -20,24 +20,24 @@ Group Project. The purpose of the project was to develop an application which al
 ![image](https://user-images.githubusercontent.com/91070226/152444478-fced0147-6eab-42fe-808f-1230e22a7522.png)
 
 ## Screenshots of each of the pages that I developed are shown below:
-**Home Page**__
+**Home Page**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152442646-d0bbb6cf-4d02-48b4-8dcd-6b41fee2ae58.png)
 
-**Campus Selection Page**__
+**Campus Selection Page**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444233-ebfe26d7-10a4-40e5-b7e1-e4a5dbba6bc3.png)
 
-**Campus Overview Page**__
+**Campus Overview Page**<br />
 (Page changes depending on campus selection made on previous page)__
 ![image](https://user-images.githubusercontent.com/91070226/152444250-2cb64538-283a-4745-98ad-1c172d2d147a.png)
 ![image](https://user-images.githubusercontent.com/91070226/152444259-f6e09a5f-d75d-46d5-aa05-41f63be50be2.png)
 
-**Settings Page**__
+**Settings Page**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444322-352b65cc-c87f-4758-96cf-3eff69a4b63e.png)
 
-**Reset Password Page**__
+**Reset Password Page**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444329-e607ad1a-cb69-422f-ad8d-50fcf78aaa04.png)
 
-**Splash Screen**__
+**Splash Screen**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444346-d7319a6f-26cd-44a9-9d02-5cd623edf3b4.png)
 
 
