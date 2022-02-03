@@ -3,7 +3,7 @@
 
 Group Project. The purpose of the project was to develop an application which allows users of the Ulster University libary facilities to book a slot within the library before using it, while in the process, ensuring that the library does not risk becoming overcrowded, which can be dangerous right now with the ongoing COVID-19 pandemic.
 
-## My personal contribution to the project:
+# My personal contribution to the project:
 1. Development of a Firebase Realtime Database to work with the application
 2. Front-End and Back-End Development of the Home Page
 3. Front-End and Back-End Development of Campus Selection Page
@@ -12,14 +12,14 @@ Group Project. The purpose of the project was to develop an application which al
 6. Front-End and Back-End Development of Reset Password Page
 7. Front-End and Back-End Development of Splash Screen
 
-###### The following screenshots show the tables that I created within the Firebase Realtime Database:
-**Campus Table**__
+## The following screenshots show the tables that I created within the Firebase Realtime Database:
+**Campus Table**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444461-e07963ca-7bf7-49fb-bdec-e531f95a8232.png)
 
-**User Table**__
+**User Table**<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444478-fced0147-6eab-42fe-808f-1230e22a7522.png)
 
-###### Screenshots of each of the pages that I developed are shown below:
+## Screenshots of each of the pages that I developed are shown below:
 **Home Page**__
 ![image](https://user-images.githubusercontent.com/91070226/152442646-d0bbb6cf-4d02-48b4-8dcd-6b41fee2ae58.png)
 
