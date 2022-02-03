@@ -2,7 +2,7 @@
 [UU Year 2 - Mobile Application Development] / Group Assignment - Library Booking Android App developed on Android Studio
 
 Group Project. The purpose of the project was to develop an application which allows users of the Ulster University libary facilities to book a slot within the library before using it, while in the process, ensuring that the library does not risk becoming overcrowded, which can be dangerous right now with the ongoing COVID-19 pandemic.
-I recieved 72% for this assignment.
+<br />I recieved 72% for this assignment.
 
 **See LibraryAppReport for the invidual report that I wrote and submitted as part of the assignment.**<br />
 See below for details on the application.
