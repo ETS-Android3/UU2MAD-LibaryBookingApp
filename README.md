@@ -6,6 +6,10 @@ Group Project. The purpose of the project was to develop an application which al
 **See LibraryAppReport for the invidual report that I wrote and submitted as part of the assignment.**<br />
 See below for details on the application.
 
+This is an Android Mobile Application.<br />
+Developed on Android Studio.<br />
+Java Programming Language<br />
+
 # My personal contribution to the project:
 1. Development of a Firebase Realtime Database to work with the application
 2. Front-End and Back-End Development of the Home Page
