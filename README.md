@@ -26,7 +26,7 @@ Java Programming Language<br />
 **User Table**<br /><br />
 ![image](https://user-images.githubusercontent.com/91070226/152444478-fced0147-6eab-42fe-808f-1230e22a7522.png)<br /><br />
 
-## Screenshots showing pages that I developed
+## Screenshots showing the pages that I developed
 **Home Page**<br /><br />
 ![image](https://user-images.githubusercontent.com/91070226/152442646-d0bbb6cf-4d02-48b4-8dcd-6b41fee2ae58.png)<br /><br />
 
