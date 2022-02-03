@@ -3,7 +3,7 @@
 
 Group Project. The purpose of the project was to develop an application which allows users of the Ulster University libary facilities to book a slot within the library before using it, while in the process, ensuring that the library does not risk becoming overcrowded, which can be dangerous right now with the ongoing COVID-19 pandemic.
 
-**See LibraryAppReport for the invidual report that I wrote and submitted as part of the assignment.**
+**See LibraryAppReport for the invidual report that I wrote and submitted as part of the assignment.**<br />
 See below for details on the application.
 
 # My personal contribution to the project:
@@ -30,8 +30,8 @@ See below for details on the application.
 ![image](https://user-images.githubusercontent.com/91070226/152444233-ebfe26d7-10a4-40e5-b7e1-e4a5dbba6bc3.png)
 
 **Campus Overview Page**<br />
-(Page changes depending on campus selection made on previous page)__
-![image](https://user-images.githubusercontent.com/91070226/152444250-2cb64538-283a-4745-98ad-1c172d2d147a.png)
+(Page changes depending on campus selection made on previous page)<br />
+![image](https://user-images.githubusercontent.com/91070226/152444250-2cb64538-283a-4745-98ad-1c172d2d147a.png)<br />
 ![image](https://user-images.githubusercontent.com/91070226/152444259-f6e09a5f-d75d-46d5-aa05-41f63be50be2.png)
 
 **Settings Page**<br />
